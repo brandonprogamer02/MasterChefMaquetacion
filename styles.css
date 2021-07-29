@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body {
+     background-color: #2E4574;
+     padding-left: 30px;
+     position: relative;
+     font-family: 'Roboto', sans-serif;
+}
+
+#header {
+     display: flex;
+     background-color: #4D0706;
+     border: 0.5px solid #707070;
+     justify-content: space-around;
+     align-items: center;
+     height: 110px;
+     position: fixed;
+     top: 0px;
+     width: calc(99% - 57px);
+     z-index: 1;
+}
+
+#header #second-nav {
+     display: none;
+}
+
+#header #first-nav {
+     display: block;
+}
+
+#header a {
+     color: white;
+     margin-right: 20px;
+}
+
+#section {
+     display: inline-block;
+     margin-top: 100px;
+     background-color: white;
+     border: 0.5px solid #707070;
+     padding: 40px;
+     width: 65%;
+}
+
+#principales-eventos img {
+     width: 100%;
+}
+
+#aside {
+     z-index: -1;
+     margin-top: 100px;
+     width: 20%;
+     display: inline-block;
+     position: absolute;
+     right: 35px;
+     background-color: #0957BE;
+     padding: 30px;
+     color: white;
+     border: 0.5px solid #707070;
+}
+
+#aside-container {
+     display: flex;
+     flex-direction: column;
+     align-content: space-around;
+     justify-content: center;
+}
+
+#aside h3 {
+     text-align: center;
+}
+
+#aside img {
+     width: 100%;
+}
+
+#footer {
+     padding: 10px;
+     margin-top: 20px;
+     background-color: #1A1A1A;
+     border: 0.5px solid #707070;
+     color: white;
+     display: flex;
+     justify-content: space-around;
+}
+
+#footer>div {
+     display: flex;
+     align-items: center;
+}
+
+#footer img {
+     width: 30px;
+     margin-right: 20px;
+}
+
+#footer #social-networks {
+     margin-left: 20px;
+     display: flex;
+     width: 100px;
+     /* border: 2px solid white; */
+}
+
+/* tablet */
+
+@media screen and (max-width: 1000px) {
+     #header #first-nav {
+          display: none;
+     }
+     #header img {
+          width: 90%;
+     }
+     #header {
+          padding-bottom: 40px;
+          width: calc(90);
+     }
+     #header #second-nav {
+          display: inline;
+          background-color: #8B5D5C;
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+          padding: 10px;
+          width: calc(100% - 20px);
+          text-align: center;
+     }
+     #section {
+          display: block;
+          margin-top: 140px;
+          width: calc(80%);
+     }
+     #aside {
+          width: calc(80%);
+          position: relative;
+          margin: 20px 35px;
+     }
+     #footer span {
+          display: block;
+          width: 30%
+     }
+     #aside img {
+          width: 70%;
+     }
+     footer {
+          width: calc(90%);
+     }
+}
+
+/* mobile */
+
+@media screen and (max-width: 450px) {
+     #header img {
+          margin: 10%;
+     }
+}
